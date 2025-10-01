@@ -132,7 +132,7 @@ function CalenderScreen() {
 
 
             runInAction(() => {
-                vm.currentDayCell = pickRow
+                vm.currentDayCell = monthCells[Math.ceil(monthCells.length / 2)]
                 vm.currentMonthGridRowIndex = monthGridActiveWeekIndex;
 
                 // 스크롤 이동
