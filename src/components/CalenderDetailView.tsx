@@ -132,7 +132,7 @@ export default function CalenderDetailView() {
                                     onPress: () => {
                                         const newPrice:number = salary + 500
                                         setSalary(newPrice)
-                                        Alert.alert("협상완료")
+                                        Alert.alert("ㅋ.ㅋ 협상완료")
                                     },
                                     style: 'cancel',
                                 },
