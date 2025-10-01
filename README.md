@@ -1,5 +1,17 @@
 # Bunnit 과제
 
+<aside>
+
+
+💡 **참고로 안드로이드 기기가 없는 관계로**  아이폰 에서만 개발 및 테스트를 진행하였으니 참고 부탁드립니다. 💡
+
+💡 **IOS** 빌드 부탁드립니다. 💡
+
+</aside>
+
+
+---
+
 해당 과제를 하면서
 
 어떤 문제가있었고
@@ -261,4 +273,69 @@ useSharedValue를 사용하여 사용하고있는 관련된 View에 대해서만
   const progress = useSharedValue(1);
   const startProgress = useSharedValue(1);
   const startY = useSharedValue(0);
+```
+
+---
+
+### 4.  다크모드, 라이트모드
+
+해당 기능은
+
+`ThemeContext` 를 사용하고
+컬러관련 파일을 따로 제작후 사용하였습니다.
+
+IOS 설정에서 모드 변경시 실시간으로 변경되도록 설정되어있습니다.
+
+```jsx
+export const LightColors = {
+    // Brand
+    brandBlue: '#445EFF',
+    brandTextPrimary: 'white',
+
+    // Backgrounds
+    background: '#EBEBEB',
+
+    // Surfaces / Cards
+    surface: '#C5C5C7',
+
+    // Text
+    textPrimary: 'rgba(0,0,0,0.87)',
+    textSecondary: 'rgba(0,0,0,0.6)',
+
+    // Border / Separator
+    border: 'rgba(0,0,0,0.12)',
+
+    // Status
+    success: '#2E7D32',
+    warning: '#F9A825',
+    danger: '#D32F2F',
+}
+
+export const DarkColors = {
+    // Brand
+    brandBlue: '#445EFF',
+    brandTextPrimary: 'white',
+    // Backgrounds
+    background: '#101010',
+
+    // Surfaces / Cards
+    surface: '#515153',
+
+    // Text
+    textPrimary: '#FFFFFF',
+    textSecondary: 'rgba(255,255,255,0.7)',
+
+    // Border / Separator
+    border: 'rgba(255,255,255,0.16)',
+
+    // Status
+    success: '#66BB6A',
+    warning: '#FDD835',
+    danger: '#EF5350',
+
+    // Extra
+    lightDark: '#2a2a2b',
+}
+
+export type ThemeColors = typeof LightColors
 ```
