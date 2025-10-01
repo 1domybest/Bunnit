@@ -36,9 +36,7 @@ export default function CalenderDetailView() {
                                 이름
                             </Title>
                             <ContentView>
-                                <Text>
-                                    온석태
-                                </Text>
+                                온석태
                             </ContentView>
                         </ContentRow>
 
@@ -48,9 +46,7 @@ export default function CalenderDetailView() {
                                 생년월일
                             </Title>
                             <ContentView>
-                                <Text>
-                                    1996.04.18 (만 29세)
-                                </Text>
+                                1996.04.18 (만 29세)
                             </ContentView>
                         </ContentRow>
 
@@ -61,9 +57,7 @@ export default function CalenderDetailView() {
                                 장점1
                             </Title>
                             <ContentView>
-                                <Text>
-                                    일주면 좋아함
-                                </Text>
+                                일주면 좋아함
                             </ContentView>
                         </ContentRow>
 
@@ -72,9 +66,7 @@ export default function CalenderDetailView() {
                                 장점2
                             </Title>
                             <ContentView>
-                                <Text>
-                                    영어 잘함
-                                </Text>
+                                영어 잘함
                             </ContentView>
                         </ContentRow>
 
@@ -84,10 +76,8 @@ export default function CalenderDetailView() {
                             <Title style={{ fontSize: 7}}>
                                 이전 직장 연봉
                             </Title>
-                            <ContentView>
-                                <Text style={{ fontSize: 7}}>
-                                    4300만원
-                                </Text>
+                            <ContentView style={{ fontSize: 7}}>
+                                4300만원
                             </ContentView>
                         </ContentRow>
 
@@ -95,10 +85,8 @@ export default function CalenderDetailView() {
                             <Title>
                                 희망연봉
                             </Title>
-                            <ContentView>
-                                <Text style={{ color: "red", fontSize: 20}}>
-                                    {salary} 만원
-                                </Text>
+                            <ContentView style={{ color: "red", fontSize: 20}}>
+                                {salary} 만원
                             </ContentView>
                         </ContentRow>
 
@@ -106,10 +94,8 @@ export default function CalenderDetailView() {
                             <Title style={{ fontSize: 7 }}>
                                 최소 희망연봉
                             </Title>
-                            <ContentView>
-                                <Text style={{ fontSize: 7}}>
-                                    {" 4500만원 이상"}
-                                </Text>
+                            <ContentView style={{ fontSize: 7}}>
+                                {" 4500만원 이상"}
                             </ContentView>
                         </ContentRow>
                     </View>
@@ -166,7 +152,7 @@ const Title = styled.Text`
     align-self: center;
     font-weight: bold;
 `
-const ContentView = styled.View`
+const ContentView = styled.Text`
     color: ${({ theme }) => theme.textPrimary};
     font-size: 15px;
     align-self: center;
@@ -175,7 +161,7 @@ const ContentView = styled.View`
     border-radius: 5px;
     align-self: center;
     padding: 10px;
-    color: ${({ theme }) => theme.background};;
+    color: ${({ theme }) => theme.background};
 `
 
 const ContentRow = styled.View`
